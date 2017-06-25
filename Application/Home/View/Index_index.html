@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>title</title>
+    <meta charset="utf-8">
+    <load href="__PUBLIC__/ext/ext-all.js" />
+    <load href="__PUBLIC__/ext/resources/css/ext-all1.css" />
+    <load href="__PUBLIC__/ext/locale/ext-lang-zh_CN.js" />
+    <script src="__PUBLIC__/App/App.js?dt={$dt}" type="text/javascript"></script>
+    <script src="__PUBLIC__/App/List.js?dt={$dt}" type="text/javascript"></script>
+    <script src="__PUBLIC__/App/AddBill.js?dt={$dt}" type="text/javascript"></script>
+</head>
+<body>
+<script type="text/javascript">
+    Ext.onReady(function () {
+		var app = Ext.create('BILL.App');
+		app.add(Ext.create("BILL.List")); 
+    });
+</script>
+</body>
+</html> 
