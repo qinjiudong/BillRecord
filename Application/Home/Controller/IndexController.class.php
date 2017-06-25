@@ -54,7 +54,7 @@ class IndexController extends Controller {
 		$name = I('request.name');
 		$pwd = I('request.pwd');
 		$res = array('success'=>false,'msg'=>'登录失败');
-		if($name == 'qjd' && $pwd == '143012'){
+		if($name == '***' && $pwd == '***'){
 			$res = array('success'=>true,'msg'=>'');
 			session('status','loginsuccess');  
 		}
